@@ -5,11 +5,11 @@ import os
 def main():
     """Fonction principale."""
     while True:
-        print("Le rÈpertoire contient les √©l√©ments suivants :")
+        print("Le repertoire contient les √©l√©ments suivants :")
         print(os.listdir())
         phrase = input("Entrez la phrase voulue : ")
         numero = input("Entrez le nombre d'it√©rations : ")
-        print("Vous avez entrÈ la phrase '{}' avec le nombre d'itÈration {}.\n"
+        print("Vous avez entre la phrase '{}' avec le nombre d'iteration {}.\n"
               .format(phrase, numero))
         fichier = open("fichier.txt", "w")
         for i in range(int(numero)):
@@ -25,7 +25,7 @@ def main():
         print("Voici le contenu du r√©pertoire :")
         print(os.listdir())
         answer = input("Appuyer sur Entr√©e si vous voulez" +
-                       " recommencer ou 'n' pour arrÍter : ")
+                       " recommencer ou 'n' pour arreter : ")
         if answer.lower() == "n":
             break
 
